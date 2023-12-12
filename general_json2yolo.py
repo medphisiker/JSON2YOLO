@@ -382,9 +382,10 @@ def delete_dsstore(path='../datasets'):
 
 if __name__ == '__main__':
     source = 'COCO'
+    dataset_path = '/home/admin-gpu/Downloads/datasets/CashalotFishDataset_genv2/annotations'
 
     if source == 'COCO':
-        convert_coco_json('../datasets/coco/annotations',  # directory with *.json
+        convert_coco_json(dataset_path,  # directory with *.json
                           use_segments=True,
                           cls91to80=True)
 
